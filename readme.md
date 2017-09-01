@@ -1,5 +1,7 @@
 ## CWGui
 
+![preview](https://raw.githubusercontent.com/PetterBomban/CWGUI/master/preview.png)
+
 ## Installation
 
 - Install Python 3.x https://www.python.org/downloads/
