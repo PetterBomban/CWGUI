@@ -5,6 +5,7 @@
 ## Installation
 
 - Install Python 3.x https://www.python.org/downloads/
+
 *Important*: When first opening the installer, check "Add Python to PATH" at the bottom.
 
 - Download the files in this repository and place them wherever
