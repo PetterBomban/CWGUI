@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Clockwork GUI -- 0.1</title>
+    </head>
+
+    <body>
+
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul class=flashes>
+                    {% for message in messages %}
+                        <li>{{ message }}</li>
+                        <li>Errors: {{ error }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+        <br/>
+        {% if response.success %}
+                <p>{{ response.id }}
+        {% endif %}
+
+        <form action='/' method='POST'>
+            {% if key_check %}
+            Using key: {{ key}}
+            <input type='hidden' name='key' value='{{ key }}'/><br/>
+            {% else %}
+            API Key:<br/>
+            <input type='text' name='key' /><br/>
+            {% endif %}
+            To:<br/>
+            <input type='text' name='to' /><br/>
+            From:</br>
+            <input type='text' name='from' /><br/>
+            Message:</br>
+            <input type='textarea' name='msg' />
+            <input type='submit' name='submit' value='submit' />
+        </form>
+
+    </body>
+
+</html>
